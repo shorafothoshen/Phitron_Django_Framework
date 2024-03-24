@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        This is my First App File
+    </h1>
+    <br>
+    <h1>Join Filter</h1>
+    {{ lst | join:"-"}}
+
+    <br>
+    <h1>Date Filter</h1>
+    {{Today | date:"D d M Y"}}
+    <br>
+    <h1>Date Filter</h1>
+    {{Today | date:"SHORT_DATE_FORMAT"}}
+    <br>
+    <h1>Date Filter</h1>
+    {{Today | date }}
+    <br>
+    <h1>Default Filter</h1>
+    {{ val | default:"an empty String"}}
+    <br>
+    <h1>Add Filter</h1>
+    {{ addValue | add:"20"}}
+    <br>
+    <h1>Capfirst Filter</h1>
+    {{cap | capfirst}}
+    <br>
+    <h1>Cut Filter</h1>
+    {{ cutFilter1 | cut:" " }}
+    <br>
+    <h1>Cut Filter</h1>
+    {{ cutFilter2 | cut:"-" }}
+    <br>
+    <h1>Dictsort Filter</h1>
+    {{ Distsort | dictsort:"name" }}
+    <br>
+    <h1>Dictsort Filter</h1>
+    {{ Distsort | dictsort:"age" }}
+    <br>
+    <h1>Escape Filter</h1>
+    {{ Escape | escape}}
+    <br>
+    <h1>First Filter</h1>
+    {{ FirstFilter | first }}
+    <br>
+    <h1>Last Filter</h1>
+    {{ LastFilter | last }}
+    <br>
+    <h1>Length Filter</h1>
+    {{ FirstFilter | length }}
+    <br>
+    <h1>Linenumbers Filter</h1>
+    {{ LineNum | linenumbers }}
+    <br>
+    <h1>Lower Filter</h1>
+    {{ name | lower }}
+    <br>
+    <h1>Upper Filter</h1>
+    {{ name | upper }}
+    <br>
+    <h1>Title Filter</h1>
+    {{ TitleFilter | title }}
+    <br>
+    <h1>Random Filter</h1>
+    {{ RandomFilter | random }}
+    <br>
+    <h1>Slice Filter</h1>
+    {{ SliceFilter | slice:"1:2" }}
+    <br>
+    <h1>Time Filter</h1>
+    {{ TimeFilter | time:"H:i" }}
+    <br>
+    <h1>Time Filter</h1>
+    {{ TimeFilter | time:"H\h i\m" }}
+    <br>
+    <h1>Timesince Filter</h1>
+    {{ TimesinceFilter | timesince }}
+    <br>
+    <h1>Truncatechars Filter</h1>
+    {{ "The truncatechars filter is used to truncate a string if it is longer than the specified number of characters." | truncatechars:50 }}
+    <br>
+    <h1>Truncatewords Filter</h1>
+    {{ "The truncatechars filter is used to truncate a string if it is longer than the specified number of characters." | truncatewords:5 }}
+</body>
+</html>
