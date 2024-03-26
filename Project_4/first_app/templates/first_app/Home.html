@@ -1,0 +1,32 @@
+{% extends "Base.html" %}
+{% load static %}
+
+{% block contain %}
+{{block.super}}
+<h1>{{id.page}}</h1>
+{% comment %} table {% endcomment %}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Department</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for i in data %}
+    <tr>
+      <th scope="row">{{ i.Id}}</th>
+      <td>{{ i.name }}</td>
+      <td>{{ i.dept }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<br /><br />
+<img src="{% static "images/birdapp.jpg" %}" alt="bird image">
+
+
+{% endblock contain %}
