@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block contain %}
+ {% load static %}
+ <br>
+ <div class="justify-content-center d-flex">
+  <div class="Fast_food2">
+    <h1>Fast Foods</h1>
+  </div>
+ </div>
+<div class="Food">
+    <div class="card" style="width: 18rem;">
+        <img src="{% static "image/Beef Burger.png" %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Beef Burger</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url "buys" %}" class="btn btn-primary">Buy</a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{% static "image/Fashtots.png" %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fashtots</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url "buys" %}" class="btn btn-primary">Buy</a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{% static "image/French fry.png" %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">French Fry</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url "buys" %}" class="btn btn-primary">Buy</a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{% static "image/Grilled Chicken.png" %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Grilled Chichen</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url "buys" %}" class="btn btn-primary">Buy</a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{% static "image/pizza.png" %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pizza</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url "buys" %}" class="btn btn-primary">Buy</a>
+        </div>
+      </div>
+</div>
+{% endblock contain %}

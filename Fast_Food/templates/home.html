@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block contain %}
+<br>
+<div class="justify-content-center d-flex">
+  <h1 class="Fast_food1">Foods</h1>
+</div>
+<br>
+<div class="Food">
+  {% for i in meals %}
+  <div class="card" style="width: 18rem;">
+      <img src="{{i.strMealThumb}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{i.strMeal}}</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="/buy/" class="btn btn-primary">Buy</a>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+<div class="justify-content-center d-flex my-5">
+  <button class="food_bnt"><a href="/foods/">See More</a></button>
+</div>
+<br>
+{% endblock contain %}
